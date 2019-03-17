@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+    margin: 22px;
+    
+}
+
+.container {
+    
+    position: relative;
+    background: rgb(180, 170, 20);
+    width: 200px;
+    height: 200px;
+box-shadow: 10px 10px 30px 8px #000;
+}
+
+
+.box1{
+    width: 50px;
+    height: 50px;
+    background: rgb(202, 21, 21);
+    border: 5px solid #000;
+    text-align: center;
+    text-transform: uppercase;
+    font: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    padding: 10px;
+    border-radius: 50% 30% 20% 50%;
+    
+    
+}
+.box2{
+    width: 50px;
+    height: 50px;
+    background: rgba(29, 29, 194, 0.411);
+    border:5px solid #000;
+    border-radius: 5px 10px;
+}
+.box3{
+    width: 50px;
+    height: 50px;
+    background: rgba(29, 173, 16, 0.603);
+    border:5px solid #000;
+
+}
