@@ -1,0 +1,117 @@
+@import "variables.sass"
+
+*
+	margin: 0
+	padding: 0
+	// Антонина, вспомни что здесь нужно писать
+li
+	list-style-type: none	
+
+.section
+	display: flex
+	justify-content: center
+	padding: 100px 0
+	min-height: 100vh
+
+.section-greating
+	display: flex
+	flex-direction: column
+	background-color: $lightGrey
+	.wrapper
+		@include wrapper 
+		.greating_card
+			width: 606px
+			@include container
+			margin: 24px 0
+			.card_photo
+				width: 360px
+				height: 360px
+				border-radius: 50%
+				margin-bottom: 32px
+				background-color: $blue
+			.card_title 
+				line-height: 44px
+  				margin-top: 36px	
+				@include title
+			.card_text
+				width: 100%
+				line-height: 20px
+				opacity: 0.7
+				color: #000000
+				text-align: center
+				margin-top: 8px
+				@include typesetting-text1
+			.card_button
+				@include button
+				margin-top: 14px
+
+.section-expectations
+	background-color: $white
+	.wrapper
+		@include wrapper
+		.expectations-container
+			@include container
+			width: 600px
+			.expectations_title
+				width: 100%
+				@include title
+				padding: 20px 0
+			.expectations_list
+				width: 100%
+				.expectations-list_item
+					border-top: solid 2px $color_ghost_approx
+					padding: 20px 0
+					
+					&:hover
+						.item_title
+							color: black
+						.item_text
+							display: block
+					.item_title
+						@include large-text
+						color: $blue
+					.item_active
+						@include typesetting-text1
+					.item_text
+						display: none
+.section-works
+	background-color: $color_shark_approx
+	.wrapper
+		@include wrapper
+		.works-container
+			@include container
+			width: 600px
+			.works_title
+				width: 100%
+				@include title
+				padding: 20px 0
+				text-align: center
+				color: $white
+			.works_text
+				color: $color_ghost_approx
+				@include typesetting-text1
+			.works_example
+				width: 100%
+				margin-top: 60px
+				.example_title
+					@include large-text
+					color: $white
+					text-align: center
+					margin-bottom: 5px 
+				.example_link
+					@include typesetting-text1
+					text-decoration: none
+					color: $color_cornflower_blue_approx
+					text-align: center
+					display: block
+					margin-bottom: 10px
+				.example_picture
+					width: 100%
+					border-radius: 10px
+					overflow: hidden
+					margin-bottom: 50px
+					img 
+						width: 100%
+
+
+			

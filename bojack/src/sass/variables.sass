@@ -1,0 +1,70 @@
+// colors    
+$black: #000000
+$lightGrey: #eff1f2
+$color_science_blue_approx: #0059d9
+$white: #ffffff
+$color_ghost_approx: #c5cdd7
+$color_shark_approx: #25282a
+$color_cornflower_blue_approx: #71abff
+$black_8: rgba(0, 0, 0, 0.08)
+$black_12: rgba(0, 0, 0, 0.12)
+$blue: #0059D9
+$color_japanese_laurel_approx: green
+
+//fonts
+$Montserrat: Montserrat
+$sans-serif: sans-serif
+$PT-Sans: PT Sans
+$PT-Mono: PT Mono
+$monospace: monospace
+
+
+//urls
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800)
+@import url(https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic)
+@import url(https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic)
+
+@mixin title
+    font-size: 32px
+    font-family: $Montserrat
+
+@mixin subtitle 
+    font-size: 32px
+    font-family: $PT-Sans
+    
+@mixin large-text
+    font-size: 18px
+    font-family: $Montserrat
+
+@mixin user-input 
+    font-size: 14px
+    font-family: $PT-Sans
+
+@mixin typesetting-text1 
+    font-size: 14px
+    font-family: $PT-Mono
+
+@mixin typesetting-text2 
+    font-size: 14px
+    font-family: $PT-Sans
+
+@mixin wrapper
+    margin: 0 auto
+    max-width: 700px
+@mixin button 
+    background-color: $color_science_blue_approx
+    border-radius: 4px
+    color: #ffffff
+    padding: 14px 108px
+    @include large-text
+    &:active
+        background-color: #0059d9
+        opacity: 0.7
+    &:hover
+        background-color: $black
+
+@mixin container
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-wrap: wrap
