@@ -3,6 +3,7 @@
 *
 	margin: 0
 	padding: 0
+	box-sizing: border-box
 	// Антонина, вспомни что здесь нужно писать
 li
 	list-style-type: none	
@@ -112,6 +113,64 @@ li
 					margin-bottom: 50px
 					img 
 						width: 100%
+.section_contacts
+	background-color: $lightGrey
+	.wrapper
+		@include wrapper
+		.contacts_container
+			@include container
+			.contacts_title
+				width: 100%
+				@include title
+				padding-top: 20px
+				text-align: center
+				color: $black
+			.contacts_icons
+				padding: 20px 0
+				width: 200px
+				display: flex
+				justify-content: space-evenly
+				.icons_item
+					border-radius: 50%
+					background-color: red
+					width: 40px
+					height: 40px	
+					display: flex
+					justify-content: center
+					align-items: center
+					color: $white
+				.icons_facebook
+					background-color: darkblue
+				.icons_twitter
+					background-color: $color_cornflower_blue_approx
+				.icons_telegram
+					background-color: blue
+			.contacts_description
+				@include typesetting-text1
+				text-align: center
+			.contacts_form
+				width: 100%
+				*
+					width: 100%
+					margin-top: 10px
+					border-radius: 5px
+				.form__border
+					padding: 5px
+					border: 1px $color_ghost_approx solid
+				.form_top-container
+					display: flex
+					justify-content: space-between
+					.form_forename
+						width: 46%
+					.form_email
+						width: 46%
+				.form_message
+					resize: none
+				.form_upload
+					display: block
+					text-align: center
+				.form_button-send
+					@include button
 
 
 			

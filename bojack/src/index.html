@@ -4,6 +4,9 @@
       rel="stylesheet"
       href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
     />
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+    crossorigin="anonymous">
   </head>
 
   <body>
@@ -17,7 +20,7 @@
           />
           <h2 class="card_title title">Бо Джек</h2>
           <span class="card_text">Full&ndash;stack developer, Minsk</span>
-          <button class="card_button hoverbutton button large-text onclick">
+          <button class="card_button">
             Связаться
           </button>
         </div>
@@ -105,6 +108,33 @@
                   
                 </span>
               </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section_contacts">
+      <div class="wrapper">
+        <div class="contacts_container">
+          <h2 class="contacts_title">
+            Контактная информация
+          </h2>
+          <div class="contacts_icons">
+              <i class="fab fa-facebook-f icons_item icons_facebook"></i>
+              <i class="fab fa-twitter icons_item icons_twitter"></i>
+              <i class="fab fa-telegram-plane icons_item icons_telegram"></i>
+
+          </div>
+          <span class="contacts_description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, doloremque accusantium natus dolorem voluptate maiores enim dolores fuga?
+          </span>
+          <form action="" class="contacts_form">
+              <div class="form_top-container">
+                <input type="text" placeholder="Как Вас зовут ?" name="" id="" class="form_forename form__border">
+                <input placeholder="Почтовый ящик" type="email" name="" id="" class="form_email form__border">
+              </div>
+              <textarea placeholder="Сообщение" name="message" id="" cols="0" rows="10" class="form_message form__border"></textarea>
+              <a class="form_upload form__border">Прикрепить ТЗ</a>
+              <input type="button" value="Отправить" class="form_button-send">
+          </form>
         </div>
       </div>
     </section>
