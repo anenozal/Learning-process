@@ -11,17 +11,20 @@ li
 .section
 	display: flex
 	justify-content: center
-	padding: 100px 0
+	padding: 100px 30px
 	min-height: 100vh
-
+	@media screen and (max-width: 600px)
+		padding: 20px 20px
 .section-greating
 	display: flex
 	flex-direction: column
 	background-color: $lightGrey
+	@media screen and (max-width: 600px) 
+        background-color: red
 	.wrapper
 		@include wrapper 
 		.greating_card
-			width: 606px
+			//width: 606px
 			@include container
 			margin: 24px 0
 			.card_photo
@@ -30,6 +33,9 @@ li
 				border-radius: 50%
 				margin-bottom: 32px
 				background-color: $blue
+				@media screen and (max-width: 600px)
+					width: 200px
+					height: 200px
 			.card_title 
 				line-height: 44px
   				margin-top: 36px	
@@ -50,9 +56,10 @@ li
 	background-color: $white
 	.wrapper
 		@include wrapper
+
 		.expectations-container
 			@include container
-			width: 600px
+			width: 100%
 			.expectations_title
 				width: 100%
 				@include title
@@ -81,7 +88,7 @@ li
 		@include wrapper
 		.works-container
 			@include container
-			width: 600px
+			//width: 600px
 			.works_title
 				width: 100%
 				@include title
@@ -94,6 +101,8 @@ li
 			.works_example
 				width: 100%
 				margin-top: 60px
+				@media screen and (max-width: 600px)
+					margin-top: 20px
 				.example_title
 					@include large-text
 					color: $white
@@ -160,10 +169,17 @@ li
 				.form_top-container
 					display: flex
 					justify-content: space-between
+					@media screen and (max-width: 600px)
+						flex-direction: column
+						
 					.form_forename
 						width: 46%
+						@media screen and (max-width: 600px)
+							width: 100%
 					.form_email
 						width: 46%
+						@media screen and (max-width: 600px)
+							width: 100%
 				.form_message
 					resize: none
 				.form_upload
@@ -171,6 +187,7 @@ li
 					text-align: center
 				.form_button-send
 					@include button
+
 
 
 			
